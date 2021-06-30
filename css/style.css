@@ -1,0 +1,74 @@
+html {
+    --color-fail: #CC3333;
+    --color-success: #33CC33;
+}
+
+body {
+    padding: 1rem;
+}
+
+button {
+    margin: 1rem 0;
+    background-color: #33AAFF;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 0.375rem 0.625rem;
+    transition: 1s;
+}
+
+pre {
+    margin: 0;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #33FFAA;
+    color: black;
+}
+
+#exo {
+    display: none;
+}
+
+#score {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 0.5rem;
+    background: var(--color-fail);
+    z-index: 20;
+}
+
+#score.success {
+    background: var(--color-success);
+}
+
+.instruction {
+    background-color: lightgrey;
+    margin: 0.5rem 0;
+    padding: 0.375rem;
+    transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.instruction--disabled {
+    background-color: #CCCC33;
+}
+
+.instruction--success {
+    background-color: var(--color-success);
+}
+
+.instruction--fail {
+    background-color: var(--color-fail);
+}
+
+select {
+    display: block;
+    margin: 0.375rem;
+}
